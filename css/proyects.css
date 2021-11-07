@@ -1,0 +1,121 @@
+.projects {
+  margin-block-start: 40px;
+}
+
+.projects-presentation {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.projects-presentation p {
+  margin: 0;
+  font: var(--body1);
+  font-size: 1.2rem;
+  text-align: center;
+}
+
+.projects-presentation h3 {
+  margin-block-start: 24px;
+  font: var(--button);
+  font-size: 1.2rem;
+  text-align: center;
+}
+
+.projects-icon {
+  display: flex;
+  justify-content: center;
+}
+
+.projects-presentation img {
+  inline-size: 80px;
+  block-size: 80px;
+}
+
+.comment-project {
+  max-inline-size: 100%;
+  block-size: auto;
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-block-start: 80px;
+  margin-block-end: 80px;
+  padding: 24px;
+}
+
+.image-commentProject {
+  text-align: center;
+}
+
+.image-commentProject img {
+  border-radius: 50%;
+}
+
+.feedback-commentProject {
+  font: var(--body1);
+  font-size: 24px;
+}
+
+.autor-commentProject {
+  font: var(--caption);
+  color: var(--purple);
+  opacity: .5;
+}
+
+.testimony {
+  margin-block-start: 40px;
+  padding-block-start: 40px;
+}
+
+.testimony-image img {
+  max-inline-size: 100%;
+}
+
+.testimony-description {
+  display: flex;
+  font: var(--body1);
+  flex-direction: column;
+  gap: 16px;
+}
+
+@media screen and (min-width:768px) {
+  .testimony {
+    display: flex;
+    align-items: center;
+    gap: 32px;
+    padding-block-start: 80px;
+    scroll-padding-block-end: 80px;
+  }
+
+  .testimony-description {
+    flex: 1;
+  }
+
+  .testimony:nth-child(even) .testimony-image {
+    order: 2;
+    flex: 1;
+    text-align: center;
+  }
+}
+
+@media screen and (min-width:768px) {
+  .comment-project {
+    padding: 80px;
+    font-size: 34px;
+    text-align: center;
+  }
+
+  .feedback-commentProject {
+    font: var(--headline4);
+    font-size: 24px;
+  }
+
+  .autor-commentProject {
+    font: var(--headline5);
+    color: var(--purple);
+    opacity: .5;
+  }
+
+}
